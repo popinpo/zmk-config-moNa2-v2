@@ -85,12 +85,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_1 {
+        Symbol {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0
-&trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                  &trans  &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &kp BACKSLASH
-&trans        &trans        &trans            &trans             &trans        &trans    &trans  &trans        &trans                &trans                 &trans        &kp PIPE
-&trans        &trans        &trans            &trans             &trans        &trans    &trans  &trans                                                                   &trans
+&trans       &kp CARET     &kp AMPERSAND    &trans         &trans                          &trans           &kp LEFT_BRACKET      &kp TILDE       &kp RIGHT_BRACKET      &trans
+&kp AT_SIGN  &kp HASH      &kp DOLLAR       &kp PERCENT    &trans                  &trans  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp MINUS       &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL  &trans    &trans  &kp QUESTION     &kp LEFT_BRACE        &kp UNDERSCORE  &kp RIGHT_BRACE        &kp PIPE
+&trans       &trans        &trans           &trans         &trans        &trans    &trans  &trans                                                                        &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
