@@ -107,12 +107,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        Navigation {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans  &trans  &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
+&trans            &kp LC(LS(TAB))   &kp LG(UP_ARROW)  &kp LC(TAB)        &trans                                            &trans            &kp HOME        &kp UP_ARROW    &kp END          &trans
+&kp LC(LG(LEFT))  &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(RIGHT)      &kp LC(LG(RIGHT_ARROW))            &kp PAGE_UP    &kp LA(LEFT)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT)
+&trans            &kp LS(LG(LEFT))  &trans            &kp LS(LG(RIGHT))  &trans                   &trans    &kp PAGE_DOWN  &kp LS(LC(LEFT))  &kp LC(LEFT)    &trans          &kp LC(RIGHT)    &kp LS(LC(RIGHT))
+&trans            &trans            &trans            &trans             &trans                   &trans    &trans         &trans                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
