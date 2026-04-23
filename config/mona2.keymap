@@ -11,13 +11,15 @@
 #define SCROLL 6
 
 &mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 &lt {
-    quick-tap-ms = <300>;
-    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 / {
@@ -51,7 +53,7 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <280>;
         };
 
         scroll_up_down: mouse_wheel_up_down {
