@@ -21,7 +21,7 @@ layers:
   - {t: J, h: RCTRL}
   - {t: K, h: RSHFT}
   - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: '-', h: RGUI}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -33,50 +33,50 @@ layers:
   - M
   - ','
   - .
-  - /
+  - ''''
   - LCTRL
   - LEFT WIN
   - LEFT ALT
   - {t: TAB, h: Symbol}
   - {t: SPACE, h: Number}
-  - {t: LANG2, h: LEFT SHIFT}
-  - {t: LANG1, h: RIGHT CONTROL}
-  - {t: ENTER, h: Navigation}
+  - {t: LANG2, h: Navigation}
+  - {t: LANG1, h: Shortcut}
+  - {t: ENTER, h: Shortcut}
   - ESCAPE
   Symbol:
-  - {t: ▽, type: trans}
+  - '~'
+  - '#'
+  - '!'
   - ^
   - '&'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - '~'
-  - ']'
-  - {t: ▽, type: trans}
-  - '@'
-  - '#'
-  - $
   - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '!'
-  - (
-  - '-'
-  - )
-  - \
-  - KP PLUS
-  - KP MINUS
-  - KP MULTIPLY
-  - KP DIVIDE
-  - KP EQUAL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $
   - '?'
+  - '*'
+  - '@'
+  - <
+  - '['
   - '{'
-  - _
+  - (
+  - ''''
+  - {t: ▽, type: trans}
+  - '"'
+  - )
   - '}'
+  - ']'
+  - '>'
+  - '`'
   - '|'
+  - \
+  - _
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - +
+  - '-'
+  - /
+  - ':'
+  - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,7 +119,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - F10
+  - KP EQUAL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -135,9 +135,9 @@ layers:
   - Gui+UP ARROW
   - Ctl+TAB
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - HOME
-  - UP ARROW
+  - PAGE DOWN
+  - PAGE UP
   - END
   - {t: ▽, type: trans}
   - Ctl+Gui+LEFT
@@ -145,24 +145,66 @@ layers:
   - Gui+DOWN
   - Gui+RIGHT
   - Ctl+Gui+RIGHT ARROW
-  - PAGE UP
-  - Alt+LEFT
-  - LEFT ARROW
-  - DOWN ARROW
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP ARROW
   - RIGHT ARROW
-  - Alt+RIGHT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+Gui+LEFT
   - {t: ▽, type: trans}
   - Sft+Gui+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PAGE DOWN
-  - Sft+Ctl+LEFT
+  - {t: ▽, type: trans}
+  - Alt+LEFT
   - Ctl+LEFT
-  - {t: ▽, type: trans}
   - Ctl+RIGHT
-  - Sft+Ctl+RIGHT
+  - Alt+RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Shortcut:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+A
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Z
+  - Ctl+Y
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -172,49 +214,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  BT:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&bootloader'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - BT CLR ALL
   '5':
   - {t: ▽, type: trans}
   - '&mkp MB4'
@@ -301,6 +301,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  BT:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
 combos:
 - p: [39, 38]
   k: {t: ESC, h: BT}
