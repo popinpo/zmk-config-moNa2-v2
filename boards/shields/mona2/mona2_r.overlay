@@ -1,5 +1,6 @@
 #include "mona2.dtsi"
 #include <input/processors.dtsi>
+#include <input/processors/report_rate_limit.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 
@@ -70,7 +71,9 @@
 
     scroller {
         layers = <3>;
-        input-processors = 
+        input-processors =
+            <&deadzone_processor>,                              //deadzone
+            <&zip_ble_report_rate_limit 16>,                    //limit BLE report rate
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更

@@ -85,6 +85,19 @@
                 ;
     };
 
+    zip_mouse_layer: zip_mouse_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <1 2 11 12 13 19 20 30 31 32>;
+    };
+
+    deadzone_processor: deadzone_processor {
+        compatible = "zmk,input-processor-deadzone";
+        #input-processor-cells = <0>;
+        threshold = <10>;
+        timeout-ms = <300>;
+    };
+
     //right hand trackball
     trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
@@ -92,7 +105,8 @@
         input-processors =
             //<&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //Y軸反転
             //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
-            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>;       //X軸反転
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
+            <&zip_mouse_layer 5 1000>;                            //オートマウスレイヤーの選択
     };
 
     left_encoder: encoder_left {

@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: zettaface  # <-- Input Processor Keybind
       url-base: https://github.com/zettaface
+    - name: t-ogura
+      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -29,5 +31,11 @@ manifest:
     - name: zmk-input-processor-keybind
       remote: zettaface
       revision: 64303bd3932bfa7f49261fc6d0c9a3fdd06f8271 # main @ 2026-06-11
+    - name: zmk-input-processor-deadzone
+      remote: t-ogura
+      revision: 7ae1bcb0d367ad00b7fa8836cf9a9b197d88e555 # main @ 2026-06-11
+    - name: zmk-input-processor-report-rate-limit
+      remote: badjeff
+      revision: f43f37aae7aaa7bf0ec4d432683b873a7e3a8efa
   self:
     path: config
