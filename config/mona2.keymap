@@ -176,7 +176,7 @@
 // Key positions that do not deactivate the auto mouse layer
 // (keep in sync with the mouse buttons on the MOUSE layer)
 
-&zip_mouse_layer { excluded-positions = <1 2 11 12 13 19 20 30 31 32>; };
+&zip_mouse_layer { excluded-positions = <1 2 11 12 13 16 17 18 19 29 30 31 32>; };
 
 &trackball_central_listener {
     input-processors =

@@ -88,7 +88,7 @@
     zip_mouse_layer: zip_mouse_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        excluded-positions = <1 2 11 12 13 19 20 30 31 32>;
+        excluded-positions = <1 2 11 12 13 16 17 18 19 29 30 31 32>;
     };
 
     deadzone_processor: deadzone_processor {
