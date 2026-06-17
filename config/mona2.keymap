@@ -151,10 +151,10 @@
 
         MOUSE {
             bindings = <
-&trans  &mkp MB4  &mkp MB5  &trans    &trans                    &trans  &trans  &trans    &trans    &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &trans  &trans    &mkp MB4  &mkp MB5
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3
-&trans  &trans    &trans    &trans    &trans  &to 0     &to 0   &trans                              &trans
+&trans  &mkp MB4  &mkp MB5  &trans    &trans                    &trans    &trans    &trans    &trans    &trans
+&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5  &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans    &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5
+&trans  &trans    &trans    &trans    &trans  &to 0     &to 0   &trans                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -175,9 +175,8 @@
 
 // Key positions that do not deactivate the auto mouse layer
 // (keep in sync with the mouse buttons on the MOUSE layer)
-&zip_mouse_layer {
-    excluded-positions = <1 2 11 12 13 19 20 30 31 32>;
-};
+
+&zip_mouse_layer { excluded-positions = <1 2 11 12 13 19 20 30 31 32>; };
 
 &trackball_central_listener {
     input-processors =
