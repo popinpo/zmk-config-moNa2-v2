@@ -37,10 +37,10 @@ layers:
   - LEFT SHIFT
   - LEFT WIN
   - LEFT ALT
-  - {t: TAB, h: Number}
+  - {t: TAB, h: Shortcut}
   - {t: SPACE, h: Navigation}
   - {t: ESCAPE, h: Symbol}
-  - {t: BACKSPACE, h: Shortcut}
+  - {t: BACKSPACE, h: Number}
   - {t: ENTER, h: RIGHT CONTROL}
   - ESCAPE
   Number:
@@ -80,10 +80,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  - {t: ., type: held}
+  - .
   - '='
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Navigation:
@@ -110,7 +110,7 @@ layers:
   - PAGE UP
   - {t: ▽, type: trans}
   - Sft+Gui+LEFT
-  - {t: ▽, type: trans}
+  - Gui+TAB
   - Sft+Gui+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,40 +179,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+-
+  - {t: ▽, type: trans}
+  - Ctl+Sft+-
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Sft+S
+  - Gui+Sft+T
+  - Gui+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+A
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Sft+F
+  - Sft+Ctl+P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+Z
   - Ctl+Y
+  - Alt+SPACE
+  - Gui+Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+`
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '5':
