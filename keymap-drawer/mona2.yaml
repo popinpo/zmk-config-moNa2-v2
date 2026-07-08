@@ -34,15 +34,15 @@ layers:
   - {t: ',', h: RIGHT ALT}
   - {t: ., h: RIGHT GUI}
   - {t: '''', h: RIGHT SHIFT}
-  - LEFT SHIFT
+  - LEFT CONTROL
   - LEFT WIN
   - LEFT ALT
-  - {t: TAB, h: Shortcut}
-  - {t: SPACE, h: Navigation}
+  - {t: TAB, h: Navigation}
+  - {t: SPACE, h: LEFT SHIFT}
   - {t: ESCAPE, h: Symbol}
   - {t: BACKSPACE, h: Number}
   - {t: ENTER, h: RIGHT CONTROL}
-  - ESCAPE
+  - {t: ESCAPE, h: Shortcut}
   Number:
   - {t: ▽, type: trans}
   - '7'
@@ -123,8 +123,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LANG1
   - LANG2
@@ -209,12 +209,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   '5':
   - {t: ▽, type: trans}
   - '&mkp MB4'
@@ -245,10 +245,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB4'
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
