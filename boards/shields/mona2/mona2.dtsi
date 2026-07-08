@@ -98,6 +98,18 @@
         timeout-ms = <300>;
     };
 
+    // Higher-threshold deadzone that gates the auto mouse layer. Movement is
+    // suppressed until the cumulative distance (abs(dx)+abs(dy)) reaches the
+    // threshold, so a light brush of the trackball does not activate the layer.
+    // Raise threshold to require a larger deliberate movement; lower it if
+    // activation feels sluggish. Resets after timeout-ms of no movement.
+    mouse_activate_deadzone: mouse_activate_deadzone {
+        compatible = "zmk,input-processor-deadzone";
+        #input-processor-cells = <0>;
+        threshold = <50>;
+        timeout-ms = <300>;
+    };
+
     //right hand trackball
     trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
@@ -105,6 +117,7 @@
         input-processors =
             //<&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //Y軸反転
             //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
+            <&mouse_activate_deadzone>,                         // only enter the mouse layer after intentional movement
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_mouse_layer 5 1000>;                            //オートマウスレイヤーの選択
     };
