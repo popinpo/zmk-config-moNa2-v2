@@ -101,13 +101,15 @@
     // Higher-threshold deadzone that gates the auto mouse layer. Movement is
     // suppressed until the cumulative distance (abs(dx)+abs(dy)) reaches the
     // threshold, so a light brush of the trackball does not activate the layer.
-    // Raise threshold to require a larger deliberate movement; lower it if
-    // activation feels sluggish. Resets after timeout-ms of no movement.
+    // Once exceeded it passes everything through until timeout-ms of idle.
+    // timeout-ms matches the zip_mouse_layer timeout (1000) so the deadzone
+    // stays open exactly as long as the auto mouse layer is active: pauses
+    // between strokes don't re-arm it, and it re-arms when the layer drops.
     mouse_activate_deadzone: mouse_activate_deadzone {
         compatible = "zmk,input-processor-deadzone";
         #input-processor-cells = <0>;
         threshold = <200>;
-        timeout-ms = <300>;
+        timeout-ms = <1000>;
     };
 
     //right hand trackball
