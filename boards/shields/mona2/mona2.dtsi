@@ -106,7 +106,7 @@
     mouse_activate_deadzone: mouse_activate_deadzone {
         compatible = "zmk,input-processor-deadzone";
         #input-processor-cells = <0>;
-        threshold = <50>;
+        threshold = <200>;
         timeout-ms = <300>;
     };
 
