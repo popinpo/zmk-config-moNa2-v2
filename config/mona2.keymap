@@ -180,6 +180,7 @@
 
 &trackball_central_listener {
     input-processors =
+        <&mouse_activate_deadzone>,  // only enter the mouse layer after intentional movement
         <&deadzone_processor>,
         <&zip_ble_report_rate_limit 16>,
         <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
